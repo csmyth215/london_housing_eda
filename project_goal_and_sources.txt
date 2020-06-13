@@ -1,0 +1,27 @@
+Project Goal:
+To explore the relationship between house prices and age demographic in London between 2002 and 2015.
+
+Analysis steps:
+1. House_sales_initial_eda
+2. House_sales_regional_eda
+3. House_sales_borough_eda
+
+4. London_population_eda
+5. Pop_over_time
+
+6. Housing_and_population_merged_dataset_creation
+7. Pops, sales, prices correlation
+8. 2002 and 2015 comparison - identifies focus boroughs (biggest price changes between 2002-2015)
+9. Changes df creation
+10. Focus Boroughs EDA
+11. Age Distribution EDA
+
+
+Conclusions:
+
+
+
+Data sources:
+https://data.london.gov.uk/dataset/office-national-statistics-ons-population-estimates-borough
+https://data.london.gov.uk/dataset/london-borough-profiles
+https://www.kaggle.com/justinas/housing-in-london
