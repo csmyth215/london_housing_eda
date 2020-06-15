@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 
 # Import housing data set:
-housing_df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/housing_in_london_monthly_variables.csv')
+housing_df = pd.read_csv('../raw_data/housing_in_london_monthly_variables.csv')
 
 # Understand data set structure:
 housing_df.info()
@@ -77,8 +77,8 @@ clean_housing_df.info()
 # Filter to look at regions (data output to csv for further analysis):
 regions = clean_housing_df[clean_housing_df['area_type'] == 'English Region']
 region_df = regions[['area', 'average_price', 'houses_sold']].groupby('area').resample('A').agg({'average_price': 'mean', 'houses_sold': 'sum'})
-region_df.to_csv('regions_dataset.csv')
+region_df.to_csv('../raw_data/regions_dataset.csv')
 
 # Filter to look at London boroughs (data output to csv for further analysis):
 boroughs = clean_housing_df[clean_housing_df['area_type'] == 'London Borough']
-boroughs[['area', 'average_price', 'houses_sold']].to_csv('borough_dataset.csv')
+boroughs[['area', 'average_price', 'houses_sold']].to_csv('../raw_data/borough_dataset.csv')

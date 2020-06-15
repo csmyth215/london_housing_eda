@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/population_dataset_sya.csv', index_col=[0])
+df = pd.read_csv('../raw_data/population_dataset_sya.csv', index_col=[0])
 
 # Confirm data set structure:
 df.info()
@@ -50,7 +50,7 @@ plt.title('Figure 4 - London population age, 2002-2015', fontsize=12)
 plt.xlabel('Age')
 plt.ylabel('No. of Londoners')
 plt.tight_layout()
-plt.savefig('Fig4_London_population_age_2002_2015.png')
+# plt.savefig('Fig4_London_population_age_2002_2015.png')
 
 """ 
 Population increase overall between 2002-2015, particularly ages 25-35 and 60-70.

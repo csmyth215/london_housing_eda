@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-regional_view = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/regions_dataset.csv')
+regional_view = pd.read_csv('../raw_data/regions_dataset.csv')
 
 # Confirm data set structure
 regional_view.info()
@@ -34,6 +34,6 @@ g = g.set_axis_labels('Year', 'N sold')
 
 plt.subplots_adjust(top=0.8, left=0.125)
 g = g.fig.suptitle('Figure 1 - Count of houses sold per region')
-plt.savefig('Fig1_annual_house_sale_count_per_region.png')
+#plt.savefig('Fig1_annual_house_sale_count_per_region.png')
 
 """ 2008 financial crisis noticeable. """ 

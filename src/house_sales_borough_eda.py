@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-borough_view = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/borough_dataset.csv')
+borough_view = pd.read_csv('../raw_data/borough_dataset.csv')
 
 # Confirm data set structure:
 borough_view.info()
@@ -21,7 +21,7 @@ boxes.set_title('Fig2')
 boxes.set_xlabel('')
 boxes.set_ylabel('Monthly average sell price 1995 - 2019 (£)')
 plt.tight_layout()
-plt.savefig('Fig2_borough_sell_prices_boxplot.png')
+# plt.savefig('Fig2_borough_sell_prices_boxplot.png')
 
 """ Kensington and Chelsea, Westminster, City of London, Camden, 
 Hammersmith and Fulham have biggest ranges.
@@ -40,7 +40,7 @@ boxes2.set_xlabel('')
 boxes2.set_title('Fig5')
 boxes2.set_ylabel('Figure 5 - Monthly average sell price 1995 - 2019 (£)')
 plt.tight_layout()
-plt.savefig('Fig5_borough_sell_prices_boxplot(2).png')
+#plt.savefig('Fig5_borough_sell_prices_boxplot(2).png')
 
 
 # 2. Rank boroughs based on average sell price:
@@ -66,7 +66,7 @@ plt.title('''Figure 6
 their rank among all London boroughs over time''', fontsize=8)
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.tight_layout()
-plt.savefig("Fig6_top_10_expensive_boroughs_ranked.png")
+#plt.savefig("Fig6_top_10_expensive_boroughs_ranked.png")
 
 
 """ Kensington and Chelsea and Westminster consistently most expensive, despite outliers and large IQR in prices. 

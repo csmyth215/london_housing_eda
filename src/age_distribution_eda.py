@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 
-df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/borough_changes.csv', index_col=[0])
+df = pd.read_csv('../raw_data/borough_changes.csv', index_col=[0])
 
 # Confirm data set structure:
 df.info()
@@ -88,7 +88,7 @@ plt.legend()
 plt.suptitle('Fig10')
 plt.subplots_adjust(top=0.8)
 plt.tight_layout()
-plt.savefig('Fig10_sales_prices_against_borough_age_distribution.png')
+#plt.savefig('Fig10_sales_prices_against_borough_age_distribution.png')
 
 """ The most expensive boroughs have small disparity between size of age groups.  
 Fewest houses sold in areas with highest proportions of minors and 25-34 year olds """

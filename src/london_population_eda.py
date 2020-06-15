@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-ages = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/ward-mid-year-estimates-sya-since-2002.csv')
+ages = pd.read_csv('../raw_data/ward-mid-year-estimates-sya-since-2002.csv')
 
 # Explore and tidy data:
 
@@ -90,5 +90,5 @@ for name in column_names:
 
 age_overview = ages[overview_columns]
 age_breakdown = ages[breakdown_columns]
-age_overview.to_csv('population_dataset_bracketed.csv')
-age_breakdown.to_csv('population_dataset_sya.csv')
+age_overview.to_csv('../raw_data/population_dataset_bracketed.csv')
+age_breakdown.to_csv('../raw_data/population_dataset_sya.csv')

@@ -5,8 +5,8 @@ import seaborn as sns
 
 # Compare and merge ages and prices data sets:
 
-ages = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/population_dataset_bracketed.csv', index_col=[0])
-prices = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/borough_dataset.csv')
+ages = pd.read_csv('../raw_data/population_dataset_bracketed.csv', index_col=[0])
+prices = pd.read_csv('../raw_data/borough_dataset.csv')
 
 
 # Confirm data set structure:
@@ -35,4 +35,4 @@ annual_housing = pd.merge(annual_sales, mean_annual_prices, how='left', on=['bor
 
 # Create borough population and housing data set:
 df = pd.merge(borough_ages, annual_housing, how='left', on=['borough', 'year'])
-df.to_csv('pops_sales_and_prices.csv')
+df.to_csv('../raw_data/pops_sales_and_prices.csv')

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/pops_sales_and_prices.csv', index_col=[0])
+df = pd.read_csv('../raw_data/pops_sales_and_prices.csv', index_col=[0])
 df.info()
 df['year'] = df['year'].astype('str')
 

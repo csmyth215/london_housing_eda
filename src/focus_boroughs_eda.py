@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-changes_df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/focus_borough_changes.csv', index_col=[0])
+changes_df = pd.read_csv('../raw_data/focus_borough_changes.csv', index_col=[0])
 
 # Confirm data set structure:
 changes_df.info()
@@ -36,7 +36,7 @@ g = g.set_ylabels('Population Change', fontdict=font)
 g = g.fig.suptitle('Figure 8 - Net Population Change, 2015 vs 2002')
 plt.tight_layout()
 plt.subplots_adjust(top=0.8)
-plt.savefig('Fig8_net_pop_change_by_age_band.png')
+# plt.savefig('Fig8_net_pop_change_by_age_band.png')
 
 """ 
 Biggest change in 25-34 age group.  
@@ -56,7 +56,7 @@ g2.set_ylabels('Net Population Change', fontdict=font)
 g2 = g2.fig.suptitle('Figure 9 - Net Population Change, 2015 vs 2002')
 plt.tight_layout()
 plt.subplots_adjust(top=0.8)
-plt.savefig('Fig9_net_pop_change_by_borough.png')
+# plt.savefig('Fig9_net_pop_change_by_borough.png')
 
 """
 City of London population almost stagnant.  

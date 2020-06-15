@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('C:/Users/csmyth/Desktop/Code/london_housing_eda/pops_sales_and_prices.csv', index_col=[0])
+df = pd.read_csv('../raw_data/pops_sales_and_prices.csv', index_col=[0])
 
 # Ascertain correlations between Year, Population, House Sales, and Sell Prices:
 grid = sns.pairplot(df, vars=['year', 'all_ages', 'houses_sold', 'average_price'], kind="reg", diag_kind=None, 
@@ -15,7 +15,7 @@ grid.axes[0, 0].set_xticks([years[3], years[8], years[13]])
 grid.axes[0, 3].set_yticks([years[3], years[8], years[13], 2020])
 plt.title('Figure 4')
 plt.tight_layout()
-plt.savefig('Fig4_pops_sales_prices_pairplot.png')
+# plt.savefig('Fig4_pops_sales_prices_pairplot.png')
 
 """ 
 Intuitive correlations/trends:
